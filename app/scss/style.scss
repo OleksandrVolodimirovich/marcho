@@ -23,14 +23,17 @@
         color: $title;
         padding-bottom: 2px;
         transition: all .4s;
+        @extend %quicksand-400;
         &:hover{
             color: $accent;
             border-bottom: 1px solid $accent;
+            @extend %quicksand-500;
         }
     }
     &__list-link--active{
         color: $accent;
         border-bottom: 1px solid $accent;
+        @extend %quicksand-500;
     }
 }
 .user-nav{
