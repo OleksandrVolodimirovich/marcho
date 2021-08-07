@@ -500,6 +500,48 @@
 .star{
     margin: 0 auto;
 }
+//end product
+
+//start promo
+.promo{
+    background-image: url("../images/promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 160px;
+    text-align: center;
+    &__inner{
+        max-width: 570px;
+        width: 100%;
+        margin-left: auto;
+    }
+    &__subtitle{
+        color: $accent;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+    &__link{
+        text-transform: uppercase;
+        color: $title;
+        display: inline-block;
+        border: 1px solid $accent;
+        padding: 14px 27px;
+        margin-top: 55px;
+    }
+}
+
+// start partners
+.partners{
+    padding-top: 75px;
+    &__list{
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
 
 
 @import 'media';
