@@ -520,6 +520,28 @@
         text-transform: uppercase;
         margin-bottom: 22px;
     }
+    // start timer
+    &__timer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+    &__timer-item{
+        background-color: #fff;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        span{
+            font-size: 48px;
+            @extend %roboto-700;
+            margin: 10px 0 7px;
+            color: $title;
+        }
+    }
     &__link{
         text-transform: uppercase;
         color: $title;
