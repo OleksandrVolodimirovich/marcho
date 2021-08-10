@@ -27,17 +27,17 @@ $(function(){
         total,
         days,
         hours,
-        minutes,
+        minutes, 
         seconds
         };
     }
     
     function initializeClock(id, endtime) {
-        const clock = document.getElementById(id);
-        const daysSpan = clock.querySelector('.days');
-        const hoursSpan = clock.querySelector('.hours');
-        const minutesSpan = clock.querySelector('.minutes');
-        const secondsSpan = clock.querySelector('.seconds');
+        const clock = document.querySelector('.promo__timer');
+        const daysSpan = clock.querySelector('.promo__days');
+        const hoursSpan = clock.querySelector('.promo__hours');
+        const minutesSpan = clock.querySelector('.promo__minutes');
+        const secondsSpan = clock.querySelector('.promo__seconds');
     
         function updateClock() {
         const t = getTimeRemaining(endtime);
@@ -56,7 +56,8 @@ $(function(){
         const timeinterval = setInterval(updateClock, 1000);
     }
     
-      const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+    //   const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); -> такий код не надає змоги завдати час через адмін панель
+    const deadline = $('.promo__timer').attr('data-time'); //-> зробив зміну часу через Html(в mozilla не працює)
     initializeClock('promo__timer', deadline);
 
 
