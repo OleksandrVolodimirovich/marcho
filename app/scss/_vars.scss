@@ -2,6 +2,14 @@ $accent: #fe3e57;
 $default: #8d8d8d;
 $title: #29282d;
 $bg: #f6f6f6;
+$breadcrumbs: #727272;
+$log: #909090;
+$white: #fff;
+$title-404:#28384f;
+$search: #ececec;
+
+
+
 
 %quicksand-400{
     font-family: "Quicksand-Regular", sans-serif;
@@ -22,4 +30,21 @@ $bg: #f6f6f6;
 %roboto-700{
     font-family: "Roboto-Bold", sans-serif;
     font-weight: 700;
+}
+
+%btn{
+    @extend %roboto-400;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $accent;
+    padding: 12px 36px;
+    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
+
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+@return m#{i}n(#{$numbers});
 }
