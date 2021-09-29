@@ -1,5 +1,12 @@
 $(function(){
 
+     // star reiting
+    $('.star').rateYo({ 
+        normalFill: "#ccccce",
+        ratedFill: "#ffc35b",
+        readOnly: true
+    });
+
     //slick slaider
     $('.top-slider__inner').slick({
         dots: true,
@@ -9,14 +16,8 @@ $(function(){
         autoplaySpeed: 2000
     });
 
-    // star reiting
-    $(".star").rateYo({
-        starWidth: "17px",
-        normalFill: "#ccccce",
-        ratedFill: "#ffc35b",
-        readOnly: true
-    });
 
+/*
     // promo timer
     function getTimeRemaining(endtime) {
         const total = Date.parse(endtime) - Date.parse(new Date());
@@ -58,10 +59,15 @@ $(function(){
         const timeinterval = setInterval(updateClock, 1000);
     }
     
-    //   const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); -> такий код не надає змоги завдати час через адмін панель, і час обнулюється через очистку кеш
+    const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);// -> такий код не надає змоги завдати час через адмін панель, і час обнулюється через очистку кеш
     //const deadline = $('.promo__timer').attr('data-time'); //-> зробив зміну часу через Html(в mozilla не працює), можна редагувати через адмін панель
-    const deadline = '2021-10-30'; //для тесту, але працює в mozilla
+    //const deadline = '2021-10-30'; //для тесту, але працює в mozilla
     initializeClock('promo__timer', deadline);
+
+*/
+
+
+    
 
 
 });

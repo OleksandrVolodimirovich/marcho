@@ -27,7 +27,7 @@ function cleanDist(){
 // imagemin - image compression
 
 function images(){
-    return src('app/images/**/*')
+    return src('app/images/**/*.*')
     .pipe(imagemin(
         [
             imagemin.gifsicle({interlaced: true}),
@@ -81,7 +81,7 @@ function build(){
         'app/css/style.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
-        'app/*.html'
+        'app/**/*.html'
     ], {base: 'app'})
         .pipe(dest('dist'))
 }
@@ -91,7 +91,7 @@ function build(){
 function watching(){
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-    watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
 //register
