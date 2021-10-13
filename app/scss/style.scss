@@ -3,6 +3,7 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'catalog';
 
 .header{
     padding: 40px 0 40px;
@@ -729,41 +730,7 @@
       margin-bottom: 25px;
     }
 }
-// start shop
-.shop{
-    padding: 120px 0 105px;
-    &__inner{
-        display: flex;
-    }
-    &__filters{
-        width: 370px;
-        margin-right: 30px;
-    }
-}
 
-.filter{
-    &__item{
-        padding: 35px 30px 40px;
-        border: 1px solid $search;
-        margin-bottom: 40px;
-    }
-    &__title{
-        text-transform: uppercase;
-        color: $title;
-        font-size: 22px;
-        @extend %roboto-400;
-        margin-bottom: 25px;
-    }
-}
-.filter-search{
-    &__input{
-        border: none;
-        background-color: $bg;
-        height: 50px;
-        width: 260px;
-        padding: 0 5px 0 15px;
-    }
-}
 //page-404
 .page-404{
   padding: 110px 0 120px;
