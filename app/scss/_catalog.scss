@@ -199,3 +199,25 @@
     padding: 16px 20px;
   }
 }
+
+//filter-popular
+.filter-popular{
+  &__label{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-popular{
+      background-color: $accent;
+      border-color: $accent;
+      color: $white;
+    }
+  }
+  &__checkbox{
+    border: 1px solid $default;
+    padding: 10px 20px;
+  }
+}
