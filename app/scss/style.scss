@@ -432,11 +432,15 @@
     }
 }
 .product-item{
-    max-width: 370px;
+    min-width: 370px;
+    text-align: center;
     &:hover{
         .product-item__link-box{
             transform: scale(1);
         }
+    }
+    &.product-item--list{
+      max-width: 100%;
     }
     &__img-box{
         position:relative;
