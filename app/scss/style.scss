@@ -440,7 +440,25 @@
         }
     }
     &.product-item--list{
-      max-width: 100%;
+      min-width: 100%;
+      .product-item__img-box{
+        height: 250px;
+        width: 200px;
+        img{
+          height: 250px;
+        }
+      }
+      .product-item__link-box{
+        background-color: transparent;
+        width: auto;
+        box-shadow: none;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        .product-item__link--line{
+          display: none;
+        }
+      }
     }
     &__img-box{
         position:relative;
